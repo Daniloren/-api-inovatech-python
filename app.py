@@ -4,8 +4,7 @@ import json
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True
-#app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:123456@localhost:5433/postgres" #Acesso Local
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:12345678@inovatech.ctgl1eetxvcc.us-east-1.rds.amazonaws.com:5432/postgres" #Acesso AWS
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:123456@localhost:5433/postgres" #Acesso Local
 
 db = SQLAlchemy(app)
 
